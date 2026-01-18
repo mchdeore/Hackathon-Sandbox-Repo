@@ -1,2 +1,0 @@
-#Dung
-print("Dung")
