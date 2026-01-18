@@ -1,4 +1,4 @@
-const canvas = document.getElementById("c");
+const canvas = document.getElementById("game_canvas");
 const ctx = canvas.getContext("2d");
 
 ctx.font = "24px sans-serif";

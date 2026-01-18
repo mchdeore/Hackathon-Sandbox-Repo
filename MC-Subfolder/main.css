@@ -1,6 +1,6 @@
 /* element selector */
 h1 {
-  color: blue;
+  color: rgb(217, 45, 15);
 }
 
 /* class selector */
@@ -10,6 +10,6 @@ h1 {
 
 /* id selector */
 #startBtn {
-  background: green;
+  background: rgb(124, 18, 34);
   color: white;
 }
