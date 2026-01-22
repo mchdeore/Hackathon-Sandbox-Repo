@@ -13,3 +13,8 @@ h1 {
   background: rgb(124, 18, 34);
   color: white;
 }
+
+canvas {
+  border: 10px solid black;
+}
+  
