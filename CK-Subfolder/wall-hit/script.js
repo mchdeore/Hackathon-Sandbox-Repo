@@ -6,6 +6,7 @@ canvas.height = 400;
 
 let raf;
 let running = false;
+let wallHitCount= 0
 
 const ball = {
   x: 100,
@@ -42,6 +43,7 @@ function draw() {
   ) {
     // Changes vertical direction of ball when it hits bottom or top wall
     ball.vy = -ball.vy;
+    wallHitCount++;
   }
 
   // same concept but on left and right walls
@@ -50,7 +52,10 @@ function draw() {
     ball.x + ball.vx < ball.radius
   ) {
     ball.vx = -ball.vx;
+     wallHitCount++;
   }
+
+  document.getElementById("wallHitCount").textContent = wallHitCount;
 
   raf = window.requestAnimationFrame(draw);
 }
@@ -89,5 +94,7 @@ canvas.addEventListener("mouseout", (e) => {
   window.cancelAnimationFrame(raf);
   running = false;
 });
+
+
 
 ball.draw();
