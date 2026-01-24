@@ -78,7 +78,7 @@ canvas.addEventListener("mousemove", (e) => {
 
 // when clicked inside canvas
 canvas.addEventListener("click", (e) => {
-  // thsi prevents multiple animation loops
+  // this prevents multiple animation loops
   if (!running) {
     // uses draw method
     raf = window.requestAnimationFrame(draw);
