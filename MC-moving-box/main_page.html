@@ -11,10 +11,19 @@
     <h1>My Game</h1>
     <p>Rules...</p>
     <button id="start_btn">Start</button>
+    <button id="rules_btn" type="button">How to Play</button>
+    <div id="howToPlay" hidden>
+      <h2>How to Play</h2>
+      <p>Move: Arrow Keys (box) + WASD (cursor). Place block: Space.</p>
+      <p>Hold Shift to move the cursor 2 grid units at a time.</p>
+      <p>Reach the green goal. Blocks disappear after 3 seconds.</p>
+    </div>
   </section>
   <section id="gameScreen" hidden>
+    <div id="blockCounter">Blocks: 0/1</div>
     <canvas id="game_canvas" width="800" height="450"></canvas>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
   <script src="mc_sandbox.js" defer></script>
 </body>
